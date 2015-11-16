@@ -57,5 +57,4 @@ for (i in min(test$Id):max(test$Id))
 	df$Sales[i] <- predict(models[[test$Store[i]]], newdata=test[i,])
 }
 
-
 write.csv(df, file='~/Development/kaggle/rossman/data/predict.csv', row.names=FALSE)
